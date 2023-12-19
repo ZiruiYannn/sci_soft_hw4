@@ -1,0 +1,29 @@
+{
+    "files.associations": {
+        "random": "cpp",
+        "cmath": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cstdarg": "cpp",
+        "cstddef": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cstring": "cpp",
+        "ctime": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "algorithm": "cpp",
+        "initializer_list": "cpp",
+        "array": "cpp",
+        "atomic": "cpp",
+        "complex": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "iterator": "cpp",
+        "memory_resource": "cpp",
+        "string_view": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp"
+    }
+}

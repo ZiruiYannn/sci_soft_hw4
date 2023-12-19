@@ -19,6 +19,6 @@ int main(int argc, char *argv[]){
     auto mr1 = ublas::subrange(mr,1,201);
     mr1.assign(v*(i+1));
     }
-    std::cout<<A(0,3)<<" "<<A(1,3)<<" "<<A(200,3)<<std::endl;
+    std::cout<<A(0,0)<<" "<<A(0,1)<<" "<<A(200,3)<<std::endl;
     return 0;
 }

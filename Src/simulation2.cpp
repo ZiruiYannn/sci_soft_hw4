@@ -12,6 +12,7 @@
 #include <type_traits>
 
 namespace ublas = boost::numeric::ublas;
+typedef double prec;
 
 int main(int argc, char* argv[]) {
     
@@ -20,17 +21,17 @@ int main(int argc, char* argv[]) {
     int N = atoi(argv[1]);
     assert(N > 0);
 
-    double T = atof(argv[2]);
+    prec T = atof(argv[2]);
     assert(T > 0);
     /*
     int N = 50000;
-    double T = 500;
+    prec T = 500;
     */
 
-    ublas::vector<double> init_x(50);
+    ublas::vector<prec> init_x(50);
     std::generate(init_x.begin(), init_x.end(), [](){static int i=0; i++; return 0.01*i;});
 
-    ublas::vector<double> ms(50);
+    ublas::vector<prec> ms(50);
     std::generate(ms.begin(), ms.end(), [](){static int i=-1; i++; return 0.1*i;});
 
     /*
@@ -43,7 +44,7 @@ int main(int argc, char* argv[]) {
 
     
     kul::ivp ivp1(init_x, T, N, df, J);
-    ublas::matrix<double> out_mat = ivp1.simu_forward();
+    ublas::matrix<prec> out_mat = ivp1.simu_forward();
     kul::write_result("../output/fwe_simulation2.out", out_mat);
 
     out_mat = ivp1.simu_backward();

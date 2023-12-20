@@ -32,7 +32,7 @@ namespace kul {
         ublas::matrix<value_type> J(5,5);
 
         S SIR = x(0) + x(1) + x(3);
-        S SIR2 = std::pow(SIR, 2.0);
+        S SIR2 = SIR * SIR;
 
         /*frac{\partial S}{\partial * }*/ 
         J(0,0) = - beta * (x(1)/SIR - x(0) * x(1) /SIR2 );

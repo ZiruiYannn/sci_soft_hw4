@@ -1,6 +1,8 @@
-**Use Src/Makefile to generate the executable.**
+**Step 1 Go to folder Src**
 
-Practical Information:
+**Step 2 Use Makefile to generate the executable**
+
+**Practical Information:**
 
 **simulation3.cpp**: generate the simulation results of predictions of the observations
 
